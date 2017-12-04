@@ -11,12 +11,12 @@ print(figlet_format("NightCrawler"))
 sitemap = []
 good_urls = []
 bad_urls = []
-base_url = "http://testazure.drivetime.com"
+base_url = "https://drivetime-east-stage.azurewebsites.net"
 
 start_time = datetime.datetime.now()
 
 main_sitemap = requests.get(base_url + "/sitemap-main.xml")
-dsr_sitemap = requests.get(base_url + "/sitemap-dl.xm")
+dsr_sitemap = requests.get(base_url + "/sitemap-dl.xml")
 ddp_sitemap = requests.get(base_url + "/sitemap-dd.xml")
 some_vehicle_sitemap = requests.get(base_url + "/sitemap-vd-343.xml")
 
